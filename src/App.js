@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { createUseStyles } from "react-jss";
+import Menu from "./components/Menu";
+
+const styles = createUseStyles({
+  root: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
+  window: {
+    background: "#fff",
+    height: "110vh",
+    width: "100%",
+  },
+});
 
 function App() {
+  const classes = styles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.root}>
+      <Menu />
+      <div className={classes.window}>
+        <h1>Content</h1>
+      </div>
     </div>
   );
 }
