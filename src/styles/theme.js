@@ -4,6 +4,7 @@ export const blue = {
 };
 
 export const green = {
+  dark: "#1baa80",
   main: "#20c997",
 };
 
@@ -13,7 +14,7 @@ export const red = {
 
 export const grey = {
   medium: "#595959",
-  light: "#6c6c6c",
+  light: "#6c757d",
 };
 
 const theme = {
@@ -38,6 +39,7 @@ const theme = {
     large: 1280,
     xlarge: 1920,
   },
+  transition: 0.3,
   text: {
     fontFamily: "Poppins, sans-serif",
     paragraph: {
@@ -47,10 +49,15 @@ const theme = {
       marginBottom: "1rem",
       color: "#4c4d4d",
     },
-    sectionHeading: {
+    h1: {
       fontWeight: 600,
       fontSize: "2.25rem",
       color: "#343a40",
+    },
+    h2: {
+      fontWeight: 600,
+      fontSize: "1.75rem",
+      color: "#252b33",
     },
   },
   shadow: "0px 5px 15px rgba(0, 0, 0, 0.3)",
