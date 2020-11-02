@@ -1,8 +1,11 @@
 import React from "react";
 import { createUseStyles } from "react-jss";
 import Menu from "./components/Menu";
-import Button from "./components/Button";
 import MobileMenu from "./components/Menu/MobileMenu";
+import AboutMe from "./sections/AboutMe";
+import Header from "./sections/Header";
+import Resume from "./sections/Resume";
+import WhatIDo from "./sections/WhatIDo";
 
 const styles = createUseStyles((theme) => ({
   root: {
@@ -14,7 +17,6 @@ const styles = createUseStyles((theme) => ({
   },
   window: {
     background: "#fff",
-    height: "110vh",
     width: "100%",
   },
 }));
@@ -26,9 +28,10 @@ function App() {
       <Menu />
       <MobileMenu />
       <div className={classes.window}>
-        <Button onClick={() => alert("WOW")} variant="alt">
-          Click Me
-        </Button>
+        <Header />
+        <AboutMe />
+        <WhatIDo />
+        <Resume />
       </div>
     </div>
   );

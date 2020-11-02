@@ -52,7 +52,7 @@ function Button({ variant = "secondary", children, onClick }) {
 
 Button.propTypes = {
   children: PropTypes.string.isRequired,
-  onClikc: PropTypes.func.isRequired,
+  onClick: PropTypes.func.isRequired,
   variant: PropTypes.oneOf(["primary", "secondary", "alt"]),
 };
 
