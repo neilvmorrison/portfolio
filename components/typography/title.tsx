@@ -1,5 +1,7 @@
 import { ReactNode } from "react";
 import { TypographyTags } from ".";
+import clsx from "clsx";
+import classes from "./classes.module.css";
 
 interface ITitleProps {
   children: ReactNode;
@@ -10,5 +12,5 @@ export default function Title({
   children,
   component: Component = "h1",
 }: ITitleProps) {
-  return <Component>{children}</Component>;
+  return <Component className={clsx(classes[Component])}>{children}</Component>;
 }

@@ -19,11 +19,14 @@ const socials = [
 export default function TopNav() {
   return (
     <header className={classes.root}>
-      {socials.map((link) => (
-        <a href={link.href} key={link.href} target="_blank">
-          {link.icon}
-        </a>
-      ))}
+      <div>Breadcrumbs &rsaquo; go &rsaquo; ... &rsaquo; here</div>
+      <nav className={classes.nav}>
+        {socials.map((link) => (
+          <a href={link.href} key={link.href} target="_blank">
+            {link.icon}
+          </a>
+        ))}
+      </nav>
     </header>
   );
 }

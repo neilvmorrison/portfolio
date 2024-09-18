@@ -10,3 +10,12 @@
   border-right: 1px solid var(--grey-1);
   box-shadow: var(--shadow-side-md);
 }
+
+.credentials {
+  text-align: center;
+}
+
+.subheading {
+  font-size: 0.87rem;
+  font-weight: 500;
+}

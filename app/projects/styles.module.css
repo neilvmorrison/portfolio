@@ -33,3 +33,8 @@
   border-radius: var(--radius-sm);
   background: var(--grey-1);
 }
+
+.language {
+  font-size: 0.75rem;
+  font-weight: 600;
+}

@@ -1,4 +1,6 @@
+import { ReactNode } from "react";
 import classes from "./classes.module.css";
+import clsx from "clsx";
 
 export type TypographyTags =
   | "h1"
@@ -11,13 +13,28 @@ export type TypographyTags =
   | "span";
 
 interface ITypographyProps {
+  children: ReactNode;
+  className?: string;
   component?: TypographyTags;
-  children: string;
+  dimmed?: boolean;
 }
 
 export default function Typography({
   component: Component = "p",
   children,
+  dimmed = false,
+  className: customClassName,
 }: ITypographyProps) {
-  return <Component className={classes.root}>{children}</Component>;
+  return (
+    <Component
+      className={clsx(
+        classes.root,
+        classes[Component],
+        customClassName,
+        dimmed && classes.dimmed
+      )}
+    >
+      {children}
+    </Component>
+  );
 }

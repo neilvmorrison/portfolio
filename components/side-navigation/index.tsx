@@ -29,9 +29,11 @@ export default function SideNavigation() {
   return (
     <Surface className={classes.root}>
       <Avatar src="" alt="" fallback_text="NM" />
-      <div>
+      <div className={classes.credentials}>
         <Title>Neil Morrison</Title>
-        <Typography>Software Engineer, Racing Enthusiast</Typography>
+        <Typography className={classes.subheading} dimmed>
+          Software Engineer &#8226; Racing Enthusiast &#8226; Musician
+        </Typography>
       </div>
       {links.map((link) => (
         <Link key={link.href} href={link.href}>

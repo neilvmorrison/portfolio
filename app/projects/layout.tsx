@@ -53,7 +53,9 @@ export default function ProjectsLayout({ children }: IProjectLayoutProps) {
                 className={classes["project-link"]}
               >
                 <Title component="h3">{project.name}</Title>
-                <Typography>{project.language}</Typography>
+                <Typography dimmed className={classes.language}>
+                  {project.language}
+                </Typography>
               </Link>
             );
           })}
