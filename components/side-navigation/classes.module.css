@@ -8,4 +8,5 @@
   top: 0;
   bottom: 0;
   border-right: 1px solid var(--grey-1);
+  box-shadow: var(--shadow-side-md);
 }

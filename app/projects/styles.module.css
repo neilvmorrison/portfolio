@@ -1,4 +1,22 @@
 .root {
   display: grid;
   grid-template-columns: var(--sidebar-width) 1fr;
+  gap: var(--spacing-lg);
+}
+
+.sidebar {
+  min-height: 100vh;
+  border-right: 1px solid var(--grey-1);
+  position: sticky;
+  top: 0;
+}
+
+.page-root {
+  min-height: calc(100vh - var(--topnav-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
 }
