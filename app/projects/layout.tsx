@@ -29,6 +29,13 @@ const projects = [
     date: "28 June, 2023",
     href: "test-proj-3",
   },
+  {
+    id: "2c7c79a9-3dd0-446b-80a0-ab318ef8b129",
+    name: "This Webapp",
+    language: "Typescript, React, Markdown",
+    date: "28 June, 2023",
+    href: "test-proj-4",
+  },
 ];
 
 export default function ProjectsLayout({ children }: IProjectLayoutProps) {
