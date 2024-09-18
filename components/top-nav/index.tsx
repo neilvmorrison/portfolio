@@ -8,11 +8,11 @@ const socials = [
   },
   {
     icon: <IconLinkedIn />,
-    href: "https://github.com/neilvmorrison",
+    href: "https://www.linkedin.com/in/neilvmorrison/",
   },
   {
     icon: <IconEmail />,
-    href: "https://github.com/neilvmorrison",
+    href: "mailto:me@neilmorrison.ca?subject=Reaching%20out%20from%20the%20website!",
   },
 ];
 
@@ -20,7 +20,7 @@ export default function TopNav() {
   return (
     <header className={classes.root}>
       {socials.map((link) => (
-        <a href={link.href} key={link.href}>
+        <a href={link.href} key={link.href} target="_blank">
           {link.icon}
         </a>
       ))}
