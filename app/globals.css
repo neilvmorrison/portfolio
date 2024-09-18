@@ -6,15 +6,68 @@
   --background: #ffffff;
   --foreground: #171717;
 
+  --text-dark: rgba(0, 0, 0, 0.87);
+  --text-light: rgba(255, 255, 255, 0.87);
+
   --sidebar-width: 320px;
+  --topnav-height: 60px;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-2xl: 48px;
+
+  --shadow-xs: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.12);
+  --shadow-sm: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.14),
+    0px 3px 1px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0px 1px 8px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.14),
+    0px 3px 3px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.14),
+    0px 3px 1px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0px 3px 5px rgba(0, 0, 0, 0.2), 0px 5px 5px rgba(0, 0, 0, 0.14),
+    0px 4px 4px rgba(0, 0, 0, 0.12);
+  --shadow-2xl: 0px 5px 7px rgba(0, 0, 0, 0.2), 0px 7px 7px rgba(0, 0, 0, 0.14),
+    0px 5px 5px rgba(0, 0, 0, 0.12);
+
+  --blue-0: hsl(208, 80%, 94%);
+  --blue-1: hsl(208, 80%, 90%);
+  --blue-2: hsl(208, 80%, 86%);
+  --blue-3: hsl(208, 80%, 77%);
+  --blue-4: hsl(208, 80%, 68%);
+  --blue-5: hsl(208, 80%, 59%);
+  --blue-6: hsl(208, 80%, 50%);
+  --blue-7: hsl(208, 80%, 41%);
+  --blue-8: hsl(208, 80%, 32%);
+  --blue-9: hsl(208, 80%, 23%);
+
+  --grey-0: hsl(0, 0%, 94%);
+  --grey-1: hsl(0, 0%, 90%);
+  --grey-2: hsl(0, 0%, 86%);
+  --grey-3: hsl(0, 0%, 77%);
+  --grey-4: hsl(0, 0%, 68%);
+  --grey-5: hsl(0, 0%, 59%);
+  --grey-6: hsl(0, 0%, 50%);
+  --grey-7: hsl(0, 0%, 41%);
+  --grey-8: hsl(0, 0%, 32%);
+  --grey-9: hsl(0, 0%, 23%);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);

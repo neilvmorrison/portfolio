@@ -1,0 +1,14 @@
+.root {
+  height: 128px;
+  width: 128px;
+  border-radius: 50%;
+  background-color: var(--blue-5);
+}
+
+.fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 3rem;
+}

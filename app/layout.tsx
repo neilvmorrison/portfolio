@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import classes from "./global-layout.module.css";
-import { Typography } from "@/components";
+import SideNavigation from "@/components/side-navigation";
+import { TopNavigation } from "@/components";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,9 +32,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${classes.root}`}
       >
         <aside>
-          <Typography>Neil Morrison</Typography>
+          <SideNavigation />
         </aside>
-        {children}
+        <main>
+          <TopNavigation />
+          {children}
+        </main>
       </body>
     </html>
   );

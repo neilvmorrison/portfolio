@@ -1,4 +1,9 @@
 .root {
   display: grid;
   grid-template-columns: var(--sidebar-width) 1fr;
+  gap: var(--spacing-lg);
+}
+
+.root-main {
+  position: relative;
 }

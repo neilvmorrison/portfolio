@@ -1,8 +1,9 @@
 import { Typography } from "@/components";
+import classes from "./classes.module.css";
 
 export default function Resume() {
   return (
-    <div>
+    <div className={classes.root}>
       <Typography>Resume</Typography>
     </div>
   );
