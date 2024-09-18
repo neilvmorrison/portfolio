@@ -20,3 +20,14 @@
   margin: 0 auto;
   text-align: center;
 }
+
+.links {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-direction: column;
+  margin: var(--spacing-md) 0;
+}
+
+.project-link {
+  padding: var(--spacing-sm);
+}
