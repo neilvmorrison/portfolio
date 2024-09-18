@@ -13,12 +13,8 @@
 
 .page-root {
   min-height: calc(100vh - var(--topnav-height));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 640px;
-  margin: 0 auto;
-  text-align: center;
+  width: 640px;
+  margin: var(--spacing-xl) auto;
 }
 
 .links {
@@ -30,4 +26,10 @@
 
 .project-link {
   padding: var(--spacing-sm);
+  transition: all 0.2s;
+}
+
+.project-link:hover {
+  border-radius: var(--radius-sm);
+  background: var(--grey-1);
 }

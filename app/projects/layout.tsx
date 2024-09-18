@@ -13,18 +13,21 @@ const projects = [
     name: "Assetto Corsa Scripts",
     language: "Python",
     date: "28 June, 2023",
+    href: "test-proj-1",
   },
   {
     id: "8310d33a-50fb-4633-9071-da013a425e23",
     name: "Assetto Corsa Modding Manual",
     language: "Typescript, React, Markdown",
     date: "28 June, 2023",
+    href: "test-proj-2",
   },
   {
     id: "2c7c79a9-3dd0-446b-80a0-ab318ef8b129",
     name: "2D Physics Engine",
     language: "Typescript",
     date: "28 June, 2023",
+    href: "test-proj-3",
   },
 ];
 
@@ -39,7 +42,7 @@ export default function ProjectsLayout({ children }: IProjectLayoutProps) {
             return (
               <Link
                 key={project.id}
-                href={`/projects/${project.id}`}
+                href={`/projects/${project.href}`}
                 className={classes["project-link"]}
               >
                 <Title component="h3">{project.name}</Title>
@@ -49,7 +52,7 @@ export default function ProjectsLayout({ children }: IProjectLayoutProps) {
           })}
         </div>
       </div>
-      <section>{children}</section>
+      <section className={classes["page-root"]}>{children}</section>
     </div>
   );
 }

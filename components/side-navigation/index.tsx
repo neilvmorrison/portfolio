@@ -4,12 +4,24 @@ import Link from "next/link";
 
 const links = [
   {
+    href: "/",
+    text: "About Me",
+  },
+  {
     href: "/resume",
     text: "Resume",
   },
   {
     href: "/projects",
     text: "Projects",
+  },
+  {
+    href: "/articles",
+    text: "Articles",
+  },
+  {
+    href: "/music",
+    text: "Music",
   },
 ];
 
